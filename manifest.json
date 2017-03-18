@@ -95,7 +95,7 @@
     "contextMenus", //http:///code.google.com/chrome/extensions/contextMenus.html
     "cookies", // http://code.google.com/chrome/extensions/cookies.html
     // "experimental", // http://code.google.com/chrome/extensions/dev/experimental.html
-    "fileBrowserHandler", // http://goo.gl/GqbrP
+    // "fileBrowserHandler", // http://goo.gl/GqbrP
     "geolocation", // http://dev.w3.org/geo/api/spec-source.html
     "history", // http://code.google.com/chrome/extensions/history.html
     "idle", // http://code.google.com/chrome/extensions/idle.html
@@ -109,7 +109,7 @@
 
   // CSP - We need to add twitter API so the default code will work
   // http://developer.chrome.com/extensions/contentSecurityPolicy.html
-  "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
+  "content_security_policy": "script-src https://ajax.googleapis.com 'unsafe-eval'; object-src 'self'",
 
   //============================================================================
   // CHANGING CHROME'S CHROME
@@ -124,7 +124,7 @@
 
   // http://code.google.com/chrome/extensions/override.html
   // pageToOverride is one of: bookmarks history newtab
-  // "chrome_url_overrides" : { "pageToOverride": "myPage.html", } 
+  // "chrome_url_overrides" : { "pageToOverride": "myPage.html", }
 
   // http://code.google.com/chrome/extensions/dev/experimental.devtools.html
   // Needs "experimental" permission
